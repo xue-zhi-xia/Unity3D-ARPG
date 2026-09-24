@@ -1,0 +1,7 @@
+/* Visual Studio Settings File */
+{
+  "languages.csharp.intellisense.codeLensOnFields": true,
+  "textEditor.general.spellChecker": true,
+  "textEditor.general.trackChangesMode": "gitChanges",
+  "textEditor.general.display.errorSquiggles": true
+}
