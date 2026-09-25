@@ -18,6 +18,11 @@ namespace SG
         public string OH_Light_Attack_01;
         public string OH_Light_Attack_02;
         public string OH_Heavy_Attack_01;
+
+        [Header("耐力代价")]
+        public int baseStamina;
+        public float lightAttackMultiplier;
+        public float heavyAttackMultiplier;
     }
 }
 
