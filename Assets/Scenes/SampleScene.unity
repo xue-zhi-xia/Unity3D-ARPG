@@ -3130,6 +3130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 454144224416888060, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
+      propertyPath: m_Color.a
+      value: 0.627451
+      objectReference: {fileID: 0}
     - target: {fileID: 503431801756758404, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3210,9 +3214,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1111744586659542771, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
+      propertyPath: m_Color.a
+      value: 0.627451
+      objectReference: {fileID: 0}
     - target: {fileID: 4637068866017561992, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
       propertyPath: m_Name
       value: Player UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586925941156620961, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
+      propertyPath: m_Color.a
+      value: 0.627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174842002854154480, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
+      propertyPath: m_Color.a
+      value: 0.627451
       objectReference: {fileID: 0}
     - target: {fileID: 8018451304164741341, guid: 7764083edb4054141a0a91c7e9595437, type: 3}
       propertyPath: m_AnchorMax.x
