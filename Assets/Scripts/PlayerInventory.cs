@@ -16,7 +16,9 @@ namespace SG
         public WeaponItem[] weaponsInLeftHandSlots = new WeaponItem[1];
 
         public int currentRightWeaponIndex = -1;
-        public int currentLeftWeaponIndex = -1;     
+        public int currentLeftWeaponIndex = -1;
+
+        public List<WeaponItem> weaponInventory;
 
         private void Awake()
         {
