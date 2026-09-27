@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SG
 {
@@ -28,6 +30,9 @@ namespace SG
             playerLocomotion.rigidbody.velocity = Vector3.zero;  // 捡东西的时候停止运动喵
             animatorHandler.PlayerTargetAnimation("Pick_up", true);  // 播放捡东西动画喵
             playerInventory.weaponInventory.Add(weapon);
+            playerManager.itemInteractableGameObject.GetComponentInChildren<TMP_Text>().text = weapon.itemName;
+            playerManager.itemInteractableGameObject.GetComponentInChildren<RawImage>().texture = weapon.itemIcon.texture;
+            playerManager.itemInteractableGameObject.SetActive(true);
             Destroy(gameObject);
 
         }

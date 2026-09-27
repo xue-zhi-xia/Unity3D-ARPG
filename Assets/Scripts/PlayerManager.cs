@@ -11,6 +11,9 @@ namespace SG
         CameraHandler cameraHandler;
         PlayerLocomotion playerLocomotion;
         Animator anim;
+        InteractableUI interactableUI;
+        public GameObject interactableUIGameObject;
+        public GameObject itemInteractableGameObject;
 
         public bool isInteracting;
 
@@ -30,6 +33,7 @@ namespace SG
             inputHandler = GetComponent<InputHandler>();
             anim = GetComponentInChildren<Animator>();
             playerLocomotion = GetComponent<PlayerLocomotion>();
+            interactableUI = FindObjectOfType<InteractableUI>();
         }
 
         void Update()
@@ -86,8 +90,8 @@ namespace SG
                     if(interactableObject != null)
                     {
                         string interactableText = interactableObject.interactableText;
-                        //设置ui文本文字为这里的喵
-                        //设置一个弹出ui窗口喵
+                        interactableUI.interactableText.text = interactableText;
+                        interactableUIGameObject.SetActive(true);
 
                         if (inputHandler.a_Input)
                         {
@@ -96,6 +100,18 @@ namespace SG
                     }
                 }
                 Debug.Log($"打到了：{hit.collider.name}, tag = {hit.collider.tag}");
+            }
+            else
+            {
+                if(interactableUIGameObject != null)
+                {
+                    interactableUIGameObject.SetActive(false);
+                }
+
+                if(itemInteractableGameObject != null && inputHandler.a_Input)
+                {
+                    itemInteractableGameObject.SetActive(false);
+                }
             }
         }
     }
